@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    image-rendering: auto;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    position: fixed;
+}
+
+.header img {
+    height: 100px;
+    width: auto;
+}
+
+.header nav {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.header a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 25%;
+}
+
+.header a:hover::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    color: var(--aux);
+}
+
+.portada {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #1c1f1fb0 0%, #333132a2 100%), url(../CafeTacuba/img/cover1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada h1 {
+    font-size: 4em;
+    color: var(--light);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portada h3 {
+    color: var(--aux);
+    font-size: 1.5em;
+}
+
+.portada p {
+    margin-top: 20px;
+    color: var(--light);
+    font-weight: 600;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portada img {
+    height: 100px;
+    width: auto;
+}
+
+body {
+    font-family: "Monserrat", sans-serif;
+    background: rgb(0, 0, 0);
+    color: blanchedalmond;
+}
+
+.integrantes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0px;
+}
+
+.integrantes div {
+    width: 40%;
+}
+
+.integrantes h3 {
+    font-size: 2em;
+}
+
+.tour {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+}
+
+.tour h1 {
+    font-size: 50px;
+}
+
+.tour h2 {
+    font-size: 25px;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.tour td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tour tr:nth-child(even) {
+    background-color: #292929;
+}
+
+.tour th {
+    font-size: larger;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tour tr:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+.tour th {
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    text-align: center;
+}
+
+.portadahist {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #1c1f1fb0 0%, #333132a2 100%), url(../CafeTacuba/img/civer2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portadahist h1 {
+    font-size: 4em;
+    color: var(--light);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portadahist h3 {
+    color: var(--aux);
+    font-size: 1.5em;
+}
+
+.portadahist p {
+    margin-top: 20px;
+    color: var(--light);
+    font-weight: 600;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portadahist img {
+    height: 100px;
+    width: auto;
+}
+
+.historia {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    margin: 150px 0px;
+}
+
+.historia div {
+    column-count: 4;
+    width: 100%;
+}
+
+.historia h1 {
+    font-size: 5em;
+}
+
+.historia h2 {
+    font-size: 3em;
+}
+
+.historia h3 {
+    font-size: 2em;
+}
+
+.historia h4 {
+    font-size: 1em;
+}
+
+.portadavis {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #1c1f1fb0 0%, #333132a2 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portadavis h1 {
+    font-size: 4em;
+    color: var(--light);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portadavis h3 {
+    color: var(--aux);
+    font-size: 1.5em;
+}
+
+.portadavis p {
+    margin-top: 20px;
+    color: var(--light);
+    font-weight: 600;
+    text-shadow: 10px 10px 10px var(--dark);
+}
+
+.portadavis img {
+    height: 100px;
+    width: auto;
+}
+
+.portadavis img {
+    height: 200px;
+    width: auto;
+}
+
+.librovis {
+    font-size: 2em;
+}
+
+.librovis div {
+    box-sizing: border-box;
+    width: 100%;
+    border: 50px solid black;
+    float: left;
+    align-content: center;
+    align-items: center;
+}
+
+.librovis form {
+    margin: auto;
+    width: 600px;
+}
+
+.videos {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #1c1f1fb0 0%, #333132a2 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Tacvba</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <img src="img/logo.jpg" alt="Logo CT">
+
+        <nav>
+            <a href="CafeTacIndex.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="videos.html">Videos</a>
+        </nav>
+
+    </header>
+
+    <div class="portadavis">
+        <h3>Libro de Visitas</h3>
+        <h1>Café Tacvba</h1>
+        <p>Firma el registro para ser parte de nuestro newsletter.
+        </p>
+        <img src="img/logo.jpg" alt="Logovis">
+    </div>
+
+    <section class="librovis">
+        <h1 style="text-align: center;">Registro</h1>
+        <form name="RegForm" action="contacto.html" onsubmit="return validacionDatos()" method="post">
+            <p>Nombre: <input type="text" size="65" name="Name" /></p>
+
+            <p>E-mail: <input type="email" size="65" name="EMail" /></p>
+
+            <p>Telefono a 8 digitos: <input type="number" size="8" name="Telephone" /></p>
+
+            <p>Deseo subscribirme al newsletter
+                <input type="checkbox" id="newsl" value="ans">
+                <label for="newsl"> Si </label>
+
+
+                <p>
+                    Vote por su canción Favorita
+                    <select type="text" value="" name="Song">
+                <option>Canciones</option>
+                <option>Rarotonga</option>
+                <option>Eres</option>
+                <option>Volver a comenzar</option>
+                <option>Ninguna</option>
+            </select>
+                </p>
+
+                <p>Comentarios: <textarea cols="55" name="Comment"> </textarea></p>
+                <p>
+                    <input type="submit" value="Enviar" name="Submit" />
+                    <input type="reset" value="Borrar todo." name="Reset" />
+                </p>
+        </form>
+    </section>
+    <script src="javascript.js "></script>
+</body>
+<footer>
+</footer>
+
+</html>
